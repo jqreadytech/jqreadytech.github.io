@@ -13,6 +13,10 @@
 			<span>ver 0.1</span>
 		</div>
     <div>
+      {{ message }}
+      <button @click="count++">
+        Count is: {{ count }}
+      </button>
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
       <div v-for="element in list" :key="element">
         <p :id="element.id" draggable="true" ondragstart="drag(event)">{{element.name}}</p>
@@ -30,11 +34,13 @@
         const message = 'Hello vue!'
         data: {
           return {
+            message,
+            count: ref(0),
             drag: ref(false),
             list: [
-                { name: "listing 1", id: 0 },
-                { name: "listing 2", id: 1 },
-                { name: "listing 3", id: 2 }
+                { name: "John", id: 0 },
+                { name: "Joao", id: 1 },
+                { name: "Jean", id: 2 }
             ],
           }
         }
@@ -73,6 +79,12 @@
       flex-wrap: wrap;
       align-content: center;
       margin: 0 auto;
+    }
+    .divTitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
     }
     #div1 {
       width: 100px;
