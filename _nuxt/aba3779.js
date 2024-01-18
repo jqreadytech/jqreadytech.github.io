@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[191],{940:function(n,e){calendarWS={outstanding:34,month:"",next:"",prev:"",days:[{date:"",allocation:0,sections:[{startTime:"09:00",endTime:"13:00",unavailablity:null,hearings:["09:30 - 12:00"]},{startTime:"13:00",endTime:"17:00",unavailablity:"Unavailable PM",hearings:[]}]}]},onSave={}}}]);
